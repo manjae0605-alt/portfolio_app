@@ -47,8 +47,8 @@ export default function Home() {
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-sky-300/90">
               Frontend Developer
             </p>
-            <h1 className="mb-4 text-3xl font-semibold leading-tight text-slate-50 md:text-4xl lg:text-5xl">
-              한 페이지로 보는
+            <h1 className="mb-4 text-3xl font-semibold leading-tight md:text-4xl lg:text-5xl">
+              <span className="text-yellow-400">한 페이지로 보는</span>
               <br />
               <span className="bg-gradient-to-r from-sky-300 via-cyan-200 to-emerald-200 bg-clip-text text-transparent">
                 우리의 경력과 역량
