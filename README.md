@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 개인 포트폴리오 1페이지 웹사이트 기능명세서 (요약본)
 
-## Getting Started
+## 1. 프로젝트 개요
+- 목적: 개인 역량과 경력을 직관적이고 전문적으로 보여주는 1페이지 포트폴리오 웹사이트 구축
+- 컨셉: 모던함, 신뢰감, 가독성 중심의 미니멀 디자인
+- 형태: Single Page Application (스크롤 기반)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 2. 공통 요구사항
+- 반응형 웹 (Desktop / Tablet / Mobile)
+- 최신 브라우저 기준 (Chrome, Edge, Safari)
+- 스크롤 기반 섹션 이동
+- 가벼운 인터랙션(hover, fade-in 등)
+- 접근성 고려 (명확한 텍스트 대비, semantic tag 사용)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 3. 페이지 구성 및 기능 명세
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3.1 Header / Navigation
+**기능**
+- 로고 또는 이름 표시
+- 메뉴: Home / About / Skills / Portfolio / Contact
+- 메뉴 클릭 시 해당 섹션으로 스무스 스크롤 이동
+- 스크롤 시 상단 고정(sticky)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 3.2 Hero Section (인트로)
+**기능**
+- 메인 타이틀 (직무/정체성 표현)
+- 서브 문구 (경력 요약 또는 핵심 메시지)
+- CTA 버튼 (Portfolio 보기 또는 Contact 이동)
+- 최초 진입 시 페이드 또는 슬라이드 애니메이션
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3.3 About (소개)
+**기능**
+- 간단한 자기소개 텍스트
+- 경력 요약 (연차, 주요 역할)
+- 프로필 이미지(optional)
+- 텍스트 가독성 중심 레이아웃
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3.4 Skills (기술 스택)
+**기능**
+- 기술 목록 아이콘 또는 텍스트 카드 형태
+- 카테고리 구분 (Frontend / Backend / Tools 등)
+- Hover 시 간단한 설명 표시(optional)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 3.5 Portfolio (작업물)
+**기능**
+- 프로젝트 카드 리스트
+- 카드 구성: 썸네일, 프로젝트명, 간단 설명
+- 클릭 시:
+  - 외부 링크 이동 또는
+  - 모달로 상세 설명 표시
+- 반응형 그리드 레이아웃
+
+---
+
+### 3.6 Contact (연락처)
+**기능**
+- 이메일 주소 표시
+- 간단한 문의 폼 (이름 / 이메일 / 메시지)
+- 제출 시:
+  - 메일 전송 또는
+  - “전송 완료” 안내 메시지 표시
+- SNS 링크 (GitHub, LinkedIn 등)
+
+---
+
+### 3.7 Footer
+**기능**
+- 저작권 문구
+- 간단한 한 줄 메시지
+- 연도 자동 갱신
+
+---
+
+## 4. 비기능 요구사항
+- 코드 가독성 및 유지보수 고려
+- 컴포넌트 단위 구조
+- 향후 콘텐츠 추가/수정 용이
+- SEO 기본 구조 고려 (title, meta, heading)
+
+---
+
+## 5. 개발 참고사항
+- 디자인은 컬러 2~3개 이내로 제한
+- 과도한 애니메이션 지양
+- 실무 포트폴리오 기준으로 신뢰감 우선
+
+
